@@ -3,60 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ann Marie sulla |My Portfolio</title>
+    <title>Ann Marie Sulla | My Portfolio</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            background: linear-gradient(to right, #0f172a, #0b3a4a);
-            color: #e5e7eb;
+            background: linear-gradient(135deg, #fdf6f0, #ffe3d8); /* soft warm background */
+            color: #1f2937; /* dark text for contrast */
+            line-height: 1.6;
         }
 
+        a {
+            color: #f91662; /* bright orange links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
         header {
-            background: linear-gradient(to right, #0ea5a4, #0f766e);
-            color: #ffffff;
-            padding: 30px 20px;
+            background: linear-gradient(135deg, #3ccefb, #f916e6); /* orange gradient header */
             text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            color: white;
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #ffeedd;
+        }
+
+        /* Sections */
         section {
             max-width: 900px;
-            margin: 20px auto;
-            background: #0b1220;
-            padding: 20px 25px;
+            margin: 30px auto;
+            padding: 25px 30px;
+        }
+
+        /* Boxes for every text */
+        section > * {
+            background: #f0fbff; /* soft box background */
+            color: #1f2937;
+            padding: 15px 20px;
             border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
         }
 
         h2 {
-            color: #5eead4;
-            border-bottom: 2px solid #134e4a;
+            color: #7816f9; /* orange heading */
+            border-bottom: 2px solid #3cbefb;
             padding-bottom: 6px;
+            font-size: 1.5em;
         }
 
         ul {
             list-style: none;
             padding-left: 0;
+            margin: 0;
         }
 
         ul li {
-            background: #0f766e;
-            margin: 6px 0;
-            padding: 8px 12px;
-            border-radius: 6px;
-            color: #ecfeff;
+            background: linear-gradient(135deg, #3c9ffb, #f916ad);
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        ul li:hover {
+            background: linear-gradient(135deg, #b116f9, #610d14);
+            transform: scale(1.03);
         }
 
         .contact p {
-            margin: 8px 0;
+            font-size: 1.05em;
         }
 
         footer {
             text-align: center;
-            padding: 12px;
-            background: #0f766e;
+            padding: 15px;
+            background: linear-gradient(135deg, #cb16f9, #fb3cc2);
             color: white;
-            margin-top: 30px;
+            margin-top: 40px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+            section {
+                margin: 20px 15px;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
@@ -64,7 +127,7 @@
 
 <header>
     <h1>Ann Marie Sulla</h1>
-    <p>BS Information Technology – 3rd Year</p>
+    <p>BS Information Technology – 3rd Year NORTH</p>
 </header>
 
 <section>
@@ -77,28 +140,26 @@
 <section>
     <h2>🛠 Skills</h2>
     <ul>
-        <li>HTML & CSS</li>
         <li>Photo Editing (Canva)</li>
+        <li>Microsoft Office</li>
     </ul>
 </section>
 
 <section>
     <h2>📂 Projects</h2>
     <ul>
-        <li>Simple Calculator (HTML, CSS, JS)</li>
-        <li>Personal Portfolio Website</li>
-        <li>To-Do List App</li>
+        <li>Personal Portfolio Website (HTML, CSS, JS)</li>
     </ul>
 </section>
 
 <section class="contact">
     <h2>📞 Contact Information</h2>
-    <p><strong>Email:</strong> annmariesulla05@email.com</p>
-    <p><strong>Phone:</strong> 09929915073</p>
+    <p><strong>Email:</strong> <a href="mailto:annmariesulla05@email.com">annmariesulla05@email.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+639929915073">09929915073</a></p>
 </section>
 
 <footer>
-    <p> Ann Marie Sulla | My Portfolio</p>
+    <p>Ann Marie Sulla | My Portfolio</p>
 </footer>
 
 </body>
